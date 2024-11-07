@@ -1,0 +1,99 @@
+# Python-related
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+*.egg
+*.whl
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+dist/
+pip-wheel-metadata/
+.pytest_cache
+
+# IDE-specific files
+
+# VS Code
+.vscode/
+.vscode/*
+
+# PyCharm
+.idea/
+*.iml
+
+# Eclipse
+.project
+.cproject
+.settings/
+*.launch
+
+# OS-specific files
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Other common system files
+.DS_Store
+*.swp
+*.swo
+.*.sw?
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+logs/
+*.log
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+
+# Coverage and test reports
+htmlcov/
+.tox/
+.nox/
+.cache/
+.coverage
+coverage.xml
+nosetests.xml
+test-reports/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Compiled source files
+*.out
+*.obj
+*.exe
+*.dll
+*.so
+
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.log
+*.bak
+*.tmp
+*.log.*
+
+# Ignore run files or any dev notes
+run.txt

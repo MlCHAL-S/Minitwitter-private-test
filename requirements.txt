@@ -1,0 +1,5 @@
+grpcio
+grpcio-tools
+pylint
+pytest
+pytest-cov

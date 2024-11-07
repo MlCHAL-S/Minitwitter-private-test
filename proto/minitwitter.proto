@@ -1,0 +1,31 @@
+// proto/minitwitter.proto
+syntax = "proto3";
+
+package minitwitter;
+
+// Define the service
+service MiniTwitter {
+    rpc sendMessage (MessageRequest) returns (MessageResponse);
+    rpc getMessages (MessageListRequest) returns (MessageListResponse);
+}
+
+// Message format for sending a tweet
+message MessageRequest {
+    string message = 1;
+}
+
+// Acknowledgment after sending a message
+message MessageResponse {
+    string status = 1;
+}
+
+// Request to retrieve a number of recent messages
+message MessageListRequest {
+    int32 count = 1;
+}
+
+// Response containing the recent messages
+message MessageListResponse {
+    repeated string messages = 1;
+    string status = 2;
+}

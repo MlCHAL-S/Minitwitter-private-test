@@ -1,0 +1,10 @@
+[MASTER]
+# This section contains global settings for pylint.
+
+# Disable E1101 (no-member) warning
+[MESSAGES CONTROL]
+disable=E1101,W0621, W0612, C0103
+
+[REPORTS]
+output-format=colorized
+
