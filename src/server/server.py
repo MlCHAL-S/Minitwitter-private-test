@@ -52,18 +52,7 @@ class MiniTwitterServicer(minitwitter_pb2_grpc.MiniTwitterServicer):
             status='Messages retrieved successfully'
         )
 
-def serve() -> None:
-    """
-    Start the gRPC server to handle client requests.
 
-    This function starts the server, binds it to port 50051, and waits for termination.
-    """
-    server: grpc.server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
-    minitwitter_pb2_grpc.add_MiniTwitterServicer_to_server(MiniTwitterServicer(), server)
-    server.add_insecure_port('[::]:50051')
-    server.start()
-    print('MiniTwitter server started on port 50051')
-    server.wait_for_termination()
 
 if __name__ == '__main__':
-    serve()
+    pass
